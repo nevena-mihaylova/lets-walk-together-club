@@ -1,0 +1,228 @@
+html {
+  font-size: 16px;
+  scroll-padding-top: 4.375rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  color: #1b1b1b;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+  color: #207309;
+  font-weight: 500;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+.join-group-now {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #207309;
+  background-color: white;
+  padding: 1rem;
+  border: 0.0625rem solid #207309;
+  border-radius: 0.625rem;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.375rem;
+  border-bottom: 0.0625rem solid #207309;
+  background-color: white;
+  font-size: 1.25rem;
+}
+
+header img {
+  height: 3.125rem;
+  margin-left: 1.875rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li:not(:last-child) {
+  margin-right: 1.875rem;
+}
+
+nav li:last-child {
+  margin-right: 3.125rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 1rem;
+    justify-content: center;
+    height: 5rem;
+  }
+
+  nav li {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  header img {
+    display: none;
+  }
+}
+
+/* Main */
+/* Banner */
+#banner {
+  position: relative;
+  top: 4.375rem;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  column-gap: 1.25rem;
+  align-items: center;
+  background-image: url("../images/walking-club-banner-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+.banner-info {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: end;
+}
+
+.banner-video {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.banner-video video {
+  width: 90%;
+}
+
+#banner h1 {
+  font-size: 2rem;
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  #banner {
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .banner-info {
+    text-align: center;
+  }
+
+  .banner-video {
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+
+  .join-group-now {
+    font-size: 1rem;
+    padding: 0.625rem;
+  }
+}
+
+/* Walking info */
+#walking-info {
+  position: relative;
+  top: 4.375rem;
+  text-align: center;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+/* Gallery */
+#gallery {
+  position: relative;
+  top: 4.375rem;
+  text-align: center;
+  background-color: #7ef45d;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.gallery-photo-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery-photo-container img {
+  width: 25rem;
+  object-fit: cover;
+  margin: 1.25rem;
+  flex-grow: 1;
+  box-shadow: 0.0625rem 0.0625rem 0.125rem #1b1b1b;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-photo-container img {
+    width: 100%;
+  }
+}
+
+/* About Us */
+#about-us {
+  position: relative;
+  top: 4.375rem;
+  text-align: center;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+#about-us .join-group-now {
+  margin-top: 1.25rem;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  top: 4.375rem;
+  text-align: center;
+  margin: 3rem auto;
+  background-color: #7ef45d;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+footer p {
+  font-size: 0.875rem;
+}
+
+footer h4 {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 400px) {
+  footer h4 {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.625rem;
+  }
+}

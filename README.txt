@@ -1,0 +1,1 @@
+This is a web page for imaginary club for walking. It is realization of the Codecademy's project for responsive design. 
